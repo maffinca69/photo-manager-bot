@@ -13,7 +13,7 @@ class MediaRequestDTOAssembler
      */
     public function create(TelegramRequestDTO ...$requests): MediaGroupRequestDTO
     {
-        $firstRequest = reset($requests);
+        $firstRequest = end($requests);
         $chatId = $firstRequest->getMessage()->getChat()->getId();
         $chatUsername = $firstRequest->getMessage()->getChat()->getUsername();
         $sourceMessageId = $firstRequest->getMessage()->getId();

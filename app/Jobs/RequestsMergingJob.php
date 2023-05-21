@@ -39,10 +39,10 @@ class RequestsMergingJob implements ShouldQueue
      * @throws TelegramHttpClientException
      */
     public function handle(
-        TelegramRequestsCacheService       $requestsForMergingCacheService,
-        MediaRequestDTOAssembler           $requestDTOAssembler,
+        TelegramRequestsCacheService $requestsForMergingCacheService,
+        MediaRequestDTOAssembler $requestDTOAssembler,
         TelegramDocumentsPublishingService $telegramDocumentsPublishingService,
-        MutexService                       $mutexService
+        MutexService $mutexService
     ) {
         sleep(self::WAIT_SECONDS);
         $requests = $requestsForMergingCacheService->get($this->mediaGroupId) ?? [];
