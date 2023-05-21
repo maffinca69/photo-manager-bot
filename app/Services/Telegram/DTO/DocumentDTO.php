@@ -6,6 +6,7 @@ class DocumentDTO
 {
     public const MIME_TYPE_JPEG = 'image/jpeg';
     public const MIME_TYPE_PNG = 'image/png';
+    public const MIME_TYPE_HEIC = 'image/heic';
 
     /**
      * @param string $filename

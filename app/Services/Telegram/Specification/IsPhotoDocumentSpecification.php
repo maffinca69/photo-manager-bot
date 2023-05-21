@@ -9,6 +9,7 @@ class IsPhotoDocumentSpecification
     private const IMAGE_MIME_TYPES = [
         DocumentDTO::MIME_TYPE_JPEG => true,
         DocumentDTO::MIME_TYPE_PNG => true,
+        DocumentDTO::MIME_TYPE_HEIC => true,
     ];
 
     /**
